@@ -1,0 +1,40 @@
+/* Top Header*/
+header {
+    background-color: aqua;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: xx-large;
+    font-family: 'Lucida Console', 'sans-serif';
+}
+
+/* Main Body */
+main {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    padding: 4px;
+}
+
+button {
+    background-color: rgb(84, 206, 206);
+    padding: 5px;
+}
+
+.all-posts {
+    display: flex;
+    flex-direction: column;
+}
