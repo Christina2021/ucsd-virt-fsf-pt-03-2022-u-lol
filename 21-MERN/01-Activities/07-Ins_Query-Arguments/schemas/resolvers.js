@@ -11,9 +11,13 @@ const resolvers = {
     classes: async () => {
       return await Class.find({}).populate('professor');
     },
+    class: async (parent, { id }, context) => {
+      // Use the parameter to find the matching class in the collection
+      return await Class.findById(id).populate('professor');
+    },
     professors: async () => {
       return await Professor.find({}).populate('classes');
-    }
+    },
   }
 };
 
